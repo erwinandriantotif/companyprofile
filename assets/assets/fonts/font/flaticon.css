@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "flaticon";
+  src: url("flaticonf618.ttf?0b49a263a16c4823ec695525826c9aaa") format("truetype"), url("flaticonf618.woff?0b49a263a16c4823ec695525826c9aaa") format("woff"), url("flaticonf618.woff2?0b49a263a16c4823ec695525826c9aaa") format("woff2"), url("flaticonf618.eot?0b49a263a16c4823ec695525826c9aaa#iefix") format("embedded-opentype"), url("flaticonf618.svg?0b49a263a16c4823ec695525826c9aaa#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-tent:before {
+  content: "";
+}
+
+.flaticon-global-network:before {
+  content: "";
+}
+
+.flaticon-secret:before {
+  content: "";
+}
+
+.flaticon-lottery:before {
+  content: "";
+}
+
+.flaticon-data-transfer:before {
+  content: "";
+}
+
+.flaticon-desktop:before {
+  content: "";
+}
+
+.flaticon-man:before {
+  content: "";
+}
+
+.flaticon-briefcase:before {
+  content: "";
+}
+
+.flaticon-trophy:before {
+  content: "";
+}
+
+.flaticon-army:before {
+  content: "";
+}
+
+.flaticon-analysis:before {
+  content: "";
+}
+
+.flaticon-cloud:before {
+  content: "";
+}
+
+.flaticon-analytics:before {
+  content: "";
+}
+
+.flaticon-light-bulb:before {
+  content: "";
+}
+
+.flaticon-launch:before {
+  content: "";
+}
+
+.flaticon-fluctuation:before {
+  content: "";
+}
+
+.flaticon-consumer:before {
+  content: "";
+}
+
+.flaticon-diamond:before {
+  content: "";
+}
+
+.flaticon-hammer:before {
+  content: "";
+}
+
+.flaticon-rocket-ship:before {
+  content: "";
+}
+
+.flaticon-helm:before {
+  content: "";
+}
+
+.flaticon-upload:before {
+  content: "";
+}
+
+.flaticon-volume:before {
+  content: "";
+}
+
+.flaticon-customer-service:before {
+  content: "";
+}
+
+.flaticon-customer-service-1:before {
+  content: "";
+}
+
+.flaticon-data:before {
+  content: "";
+}
+
+.flaticon-settings:before {
+  content: "";
+}
+
+.flaticon-server:before {
+  content: "";
+}
+
+.flaticon-right-arrow:before {
+  content: "";
+}
+
+.flaticon-left-arrow:before {
+  content: "";
+}
+/*# sourceMappingURL=flaticon.css.map */

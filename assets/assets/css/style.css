@@ -1,0 +1,4798 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&amp;display=swap");
+@font-face {
+  font-family: 'cambria-bold';
+  src: url("../fonts/cambriab.ttf");
+}
+
+:root {
+  --fontFamily: "cambria-bold";
+  --fontFamily2: 'Open Sans', sans-serif;
+  --mainColor: #029894;
+  --backgroundColor: #f4f8fc;
+  --transparentColor: #fcebe5;
+  --whiteColor: #ffffff;
+  --blackColor: #111111;
+  --paragraphColor: #555555;
+  --fontSize: 16px;
+  --transition: 0.5s;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--fontFamily);
+}
+
+h5, h6 {
+  font-family: var(--fontFamily2);
+}
+
+a {
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  color: var(--blackColor);
+  text-decoration: none;
+  outline: 0 !important;
+}
+
+a:hover {
+  color: var(--mainColor);
+  text-decoration: none;
+}
+
+:focus {
+  outline: 0 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  color: var(--paragraphColor);
+  font-size: var(--fontSize);
+  margin-bottom: 15px;
+  line-height: 1.8;
+  font-family: var(--fontFamily2);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.ptb-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.ptb-70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.pt-70 {
+  padding-top: 70px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+.pt-30 {
+  padding-top: 0px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--whiteColor) !important;
+  z-index: 99999;
+  padding: 0px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+          animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+
+.gradient-bg {
+  background-image: -webkit-gradient(linear, left top, right top, from(#e6fdff), color-stop(#edf8f9), to(#f3f3f5));
+  background-image: linear-gradient(to right, #e6fdff, #edf8f9, #f3f3f5);
+}
+
+.bg-f4f8fc {
+  background-color: #f4f8fc;
+}
+
+.bg-ffffff {
+  background-color: var(--whiteColor);
+}
+
+.bg-029894 {
+  background-color: #029894;
+}
+
+.topbar {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.topbar ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.topbar .topbar-content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.header-area .main-nav {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.topbar-social-icons ul li {
+  display: inline-block;
+}
+
+.topbar-social-icons ul li a {
+  display: inline-block;
+  margin: 0px 5px 0px 0px;
+}
+
+.topbar-right-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.topbar-right-area ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.topbar-right-area ul li i {
+  margin-right: 3px;
+  color: var(--mainColor);
+}
+
+.topbar-right-area ul li span, .topbar-right-area ul li a {
+  font-size: 14px;
+  font-family: var(--fontFamily2);
+}
+
+.topbar2 {
+  background-color: var(--mainColor);
+}
+
+.topbar2 span, .topbar2 a {
+  color: var(--whiteColor) !important;
+}
+
+.topbar2 span i, .topbar2 a i {
+  color: var(--whiteColor) !important;
+}
+
+.topbar2 .topbar-right-area ul li i {
+  color: var(--whiteColor);
+}
+
+.topbar2 .language-select .nice-select::after {
+  border-color: var(--whiteColor);
+}
+
+.topbar3 {
+  background-color: var(--blackColor);
+}
+
+.topbar3 a:hover {
+  color: var(--mainColor) !important;
+}
+
+.topbar3 a:hover i {
+  color: var(--mainColor) !important;
+}
+
+.language-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.language-select span i {
+  position: relative;
+  top: 1px;
+  left: 0px;
+  color: var(--mainColor);
+  font-size: 14px;
+}
+
+.menu-sidebar .m-search-box {
+  max-width: 250px;
+  border: 1px solid #eeeeee;
+  border-radius: 5px !important;
+  background-color: var(--whiteColor);
+}
+
+.menu-sidebar .m-search-box .form-control {
+  border: 0px solid transparent;
+  border-radius: 10px !important;
+  background-color: var(--whiteColor);
+}
+
+.menu-sidebar .m-search-box .btn {
+  z-index: 9;
+  max-height: 40px;
+  color: var(--whiteColor);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  border-radius: 5px;
+  background-color: var(--mainColor);
+}
+
+.menu-sidebar .m-search-box .btn i {
+  line-height: 1.5;
+}
+
+.menu-sidebar .m-search-box .btn i::before {
+  font-size: 18px;
+  font-weight: 600 !important;
+}
+
+.menu-sidebar .m-search-box .btn:hover {
+  color: var(--whiteColor);
+  background-color: var(--mainColor);
+}
+
+.language-select {
+  width: 80px;
+  margin-left: 0px;
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.language-select i {
+  margin-right: 7px;
+}
+
+.language-select .nice-select {
+  background-color: transparent;
+  border-radius: 0;
+  border: none !important;
+  font-size: 14px;
+  font-weight: 400;
+  height: auto;
+  line-height: initial;
+  color: var(--blackColor);
+  padding-left: 0;
+  padding-right: 30px;
+  position: relative;
+  top: 0px;
+  font-weight: 500;
+}
+
+.language-select .nice-select::after {
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
+  right: 17px;
+  height: 7px;
+  width: 7px;
+}
+
+.language-select .nice-select .list {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  border-radius: 0;
+  width: 100%;
+  height: 150px;
+  overflow-y: scroll;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #000000;
+  z-index: 9999;
+}
+
+.language-select .nice-select .list::-webkit-scrollbar {
+  display: none;
+}
+
+.language-select .nice-select .list .option.selected {
+  background-color: var(--mainColor) !important;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.language-select .nice-select .list .option {
+  text-align: center;
+  padding: 0px;
+}
+
+.language-select .nice-select ul {
+  display: block;
+}
+
+.language-select .nice-select ul li {
+  display: block;
+  margin-left: 0px !important;
+  margin: 0px;
+}
+
+/*================================================
+Navbar Area CSS
+=================================================*/
+a.meanmenu-reveal {
+  display: none;
+}
+
+.mean-container .mean-bar {
+  float: left;
+  width: 100%;
+  position: absolute;
+  background: transparent;
+  padding: 20px 0 0;
+  z-index: 999;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+  height: 60px;
+  text-transform: capitalize;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.mean-container .mean-bar * {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.mean-container a.meanmenu-reveal {
+  width: 35px;
+  height: 30px;
+  padding: 12px 15px 0 0;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  cursor: pointer;
+  color: var(--mainColor);
+  text-decoration: none;
+  font-size: 16px;
+  text-indent: -9999em;
+  line-height: 22px;
+  font-size: 1px;
+  display: block;
+  font-weight: 700;
+}
+
+.mean-container a.meanmenu-reveal span {
+  display: block;
+  background: var(--mainColor);
+  height: 4px;
+  margin-top: 5px;
+  border-radius: 3px;
+}
+
+.mean-container .mean-nav {
+  float: left;
+  width: 100%;
+  background: var(--whiteColor);
+  margin-top: 55px;
+}
+
+.mean-container .mean-nav ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border: none;
+  list-style-type: none;
+}
+
+.mean-container .mean-nav ul li {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.mean-container .mean-nav ul li a {
+  display: block;
+  float: left;
+  width: 90%;
+  padding: 1em 5%;
+  margin: 0;
+  text-align: left;
+  color: #677294;
+  border-top: 1px solid #dbeefd;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.mean-container .mean-nav ul li a:hover {
+  background: var(--whiteColor);
+}
+
+.mean-container .mean-nav ul li a.active {
+  color: var(--whiteColor);
+}
+
+.mean-container .mean-nav ul li li a {
+  width: 80%;
+  padding: 1em 10%;
+  color: #677294;
+  border-top: 1px solid #dbeefd;
+  opacity: 1;
+  filter: alpha(opacity=75);
+  text-shadow: none !important;
+  visibility: visible;
+  text-transform: none;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.mean-container .mean-nav ul li li li a {
+  width: 70%;
+  padding: 1em 15%;
+}
+
+.mean-container .mean-nav ul li li li li a {
+  width: 60%;
+  padding: 1em 20%;
+}
+
+.mean-container .mean-nav ul li li li li li a {
+  width: 50%;
+  padding: 1em 25%;
+}
+
+.mean-container .mean-nav ul li a.mean-expand {
+  margin-top: 3px;
+  width: 100%;
+  height: 24px;
+  padding: 12px !important;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  font-weight: 700;
+  background: transparent !important;
+  border: none !important;
+}
+
+.mean-container .mean-nav ul li.mean-last a {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.mean-container .mean-nav .navbar-nav {
+  overflow-y: scroll;
+  height: 340px;
+}
+
+.mean-container .mean-push {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+
+.mean-nav .wrapper {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.mean-nav .dropdown-toggle::after {
+  display: none;
+}
+
+.mean-remove {
+  display: none !important;
+}
+
+.mobile-nav {
+  display: none;
+  position: relative;
+}
+
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  background-color: var(--whiteColor);
+  color: var(--blackColor);
+}
+
+.btn-primary,
+.btn-primary:active {
+  background-color: var(--whiteColor) !important;
+  color: var(--blackColor) !important;
+  border-color: var(--blackColor) !important;
+}
+
+.mobile-nav.mean-container .mean-nav ul li a.active {
+  color: var(--mainColor);
+}
+
+/* Fix for box sizing on Foundation Framework etc. */
+.main-nav {
+  background-color: transparent;
+}
+
+.main-nav nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.main-nav nav .navbar-nav {
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.main-nav nav .navbar-nav .nav-item {
+  position: relative;
+  padding: 15px 0;
+}
+
+.main-nav nav .navbar-nav .nav-item a {
+  padding: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: relative;
+  color: var(--blackColor);
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--fontFamily2);
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.main-nav nav .navbar-nav .nav-item a i {
+  right: 0;
+  top: 6px;
+  font-size: 12px;
+  position: absolute;
+}
+
+.main-nav nav .navbar-nav .nav-item a:hover {
+  color: var(--mainColor);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-nav nav .navbar-nav .nav-item a::after {
+  display: none;
+}
+
+.main-nav nav .navbar-nav .nav-item a.dropdown-toggle {
+  padding-right: 13px;
+}
+
+.main-nav nav .navbar-nav .nav-item a.active {
+  color: var(--mainColor);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-nav nav .navbar-nav .nav-item:hover a {
+  color: var(--mainColor);
+}
+
+.main-nav nav .navbar-nav .nav-item:hover ul {
+  opacity: 1;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  visibility: visible;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu {
+  left: 0;
+  top: 50px;
+  opacity: 0;
+  z-index: 99;
+  width: 200px;
+  border: none;
+  display: block;
+  border-radius: 0px;
+  visibility: hidden;
+  position: absolute;
+  -webkit-transform: rotateZ(20deg);
+          transform: rotateZ(20deg);
+  background: var(--whiteColor);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li {
+  position: relative;
+  padding: 0;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a {
+  margin: 0;
+  display: block;
+  padding: 7px 15px;
+  color: var(--blackColor);
+  border-bottom: 1px dashed transparent;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a i {
+  top: 50%;
+  position: absolute;
+  right: 10px !important;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a::before {
+  content: '';
+  width: 0%;
+  height: 10px;
+  border-bottom: 1px dashed var(--mainColor);
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: 99;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover, .main-nav nav .navbar-nav .nav-item .dropdown-menu li a.active {
+  color: var(--mainColor);
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover::before, .main-nav nav .navbar-nav .nav-item .dropdown-menu li a.active::before {
+  width: 100%;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
+  position: absolute;
+  left: 101%;
+  top: 0;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu {
+  top: 20px;
+  left: 100%;
+  position: absolute;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
+  color: var(--blackColor);
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
+  color: var(--mainColor);
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+  top: -5px !important;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-menu li:hover .dropdown-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+  top: -5px !important;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li:hover a {
+  color: var(--mainColor);
+}
+
+.main-nav nav .navbar-nav .nav-item:last-child .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
+.navbar-light .navbar-brand {
+  color: var(--mainColor);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: var(--mainColor);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.mean-container .mean-bar {
+  position: relative;
+}
+
+.mobile-nav .menu-sidebar-small-device {
+  display: none;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  position: absolute;
+  top: 15px;
+  right: 47px;
+}
+
+.mobile-nav .menu-sidebar-small-device .uni-button {
+  padding: 5px 10px;
+}
+
+.mobile-nav .call-button {
+  top: 7px;
+}
+
+.header-area {
+  position: relative;
+}
+
+.menu-small-device {
+  display: none;
+  position: absolute;
+  right: 80px;
+  top: 14px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.menu-small-device li {
+  list-style: none;
+  display: inline-block;
+}
+
+.header-area2 .main-nav nav .navbar-nav .nav-item .dropdown-menu {
+  top: 69px;
+}
+
+/*================================================
+Header Responsive Area CSS
+=================================================*/
+@media only screen and (max-width: 767px) {
+  .topbar {
+    text-align: center;
+  }
+  .topbar .topbar-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 1px;
+  }
+  .topbar .topbar-right-area {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .topbar .topbar-right-area ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .topbar .topbar-right-area ul li span, .topbar .topbar-right-area ul li a {
+    font-size: 15px;
+  }
+  .menu-small-device {
+    top: 16px !important;
+  }
+  .menu-small-device .default-button {
+    padding: 5px 7px !important;
+    font-size: 12px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .topbar {
+    text-align: center;
+  }
+  .topbar .topbar-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .topbar .topbar-right-area {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .topbar .topbar-right-area ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .language-select {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .main-nav nav .navbar-nav .nav-item a {
+    font-size: 14px;
+    margin-left: 13px;
+    margin-right: 13px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .main-responsive-nav {
+    background-color: #ffffff;
+    height: 61px;
+  }
+  .mobile-nav {
+    display: block;
+    position: relative;
+  }
+  .mobile-nav .logo {
+    top: 8px;
+    left: 0px;
+    z-index: 999;
+    position: absolute;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .mobile-nav nav .navbar-nav .nav-item a i {
+    display: none;
+  }
+  .mean-container .mean-bar {
+    background-color: #ffffff;
+    padding: 0;
+  }
+  .mean-container a.meanmenu-reveal {
+    padding: 10px 2px 0 0;
+  }
+  .main-nav {
+    display: none !important;
+  }
+  .menu-sidebar {
+    display: none;
+  }
+  .menu-small-device {
+    z-index: 999;
+    right: 45px;
+    top: 14px;
+    display: block !important;
+  }
+  .menu-small-device .default-button {
+    padding: 7px 10px;
+    font-size: 14px;
+  }
+}
+
+/*================================================
+Footer area Area CSS
+=================================================*/
+.footer-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/footer-bg.jpg");
+}
+
+.footer-logo-area p {
+  font-size: 15px;
+  color: #e9e9e9;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.footer-logo-area .footer-social-icons a {
+  margin-right: 3px;
+}
+
+.footer-logo-area .footer-social-icons a:hover {
+  color: var(--whiteColor);
+  background-color: var(--mainColor);
+}
+
+.footer-links h3 {
+  color: var(--whiteColor);
+  margin-top: 15px;
+  margin-bottom: 23px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.footer-links ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.footer-links ul li {
+  color: var(--whiteColor);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  margin-top: 10px;
+}
+
+.footer-links ul li i {
+  margin-right: 5px;
+}
+
+.footer-links ul li a {
+  color: var(--whiteColor);
+}
+
+.footer-links ul li:hover {
+  color: var(--mainColor);
+}
+
+.company-links {
+  padding-left: 50px;
+}
+
+.footer-address ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.footer-address ul li i {
+  margin-right: 15px;
+  color: var(--mainColor);
+}
+
+.footer-address ul li:last-child {
+  max-width: 250px;
+}
+
+/*================================================ 
+CopyRight Area CSS
+=================================================*/
+.copyright {
+  text-align: center;
+  color: var(--whiteColor);
+  background-color: transparent;
+  border-top: 1px solid #eeeeee1e;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+.copyright p {
+  color: var(--whiteColor);
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.copyright p a {
+  text-decoration: none;
+  color: var(--mainColor);
+}
+
+/*================================================
+Go Top CSS
+=================================================*/
+.go-top {
+  position: fixed;
+  cursor: pointer;
+  bottom: 100px;
+  right: 20px;
+  border-radius: 5px;
+  background-color: var(--mainColor);
+  color: #ffffff;
+  z-index: 99;
+  width: 33px;
+  text-align: center;
+  height: 35px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 20px;
+  -webkit-transition: var(--transition);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.go-top i {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.go-top:hover {
+  color: #ffffff;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  background-color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+}
+
+.go-top.active {
+  opacity: 1;
+  visibility: visible;
+  bottom: 20px;
+}
+
+/*================================================
+Footer Responsive Area CSS
+=================================================*/
+@media only screen and (max-width: 767px) {
+  .company-links {
+    padding-left: 0px;
+  }
+  .footer-links h3 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .company-links {
+    padding-left: 0px;
+  }
+}
+
+/*================================================
+Default button Area CSS
+=================================================*/
+.default-button {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 25px;
+  border-radius: 0px;
+  display: inline-block;
+  color: var(--whiteColor);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background-color: var(--mainColor);
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--fontFamily2);
+}
+
+.default-button span {
+  position: relative;
+  z-index: 9;
+}
+
+.default-button i {
+  position: relative;
+  top: 2px;
+  margin-left: 2px;
+}
+
+.default-button::before {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background-color: var(--blackColor);
+}
+
+.default-button:hover {
+  color: var(--whiteColor);
+}
+
+.default-button:hover::before {
+  width: 300%;
+  height: 300%;
+}
+
+.show-more-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 25px;
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+  font-weight: 600;
+  border: 1px solid var(--mainColor);
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.show-more-btn i {
+  line-height: 1;
+  padding-left: 5px;
+  position: relative;
+  top: 3px;
+}
+
+.show-more-btn:hover {
+  background-color: var(--whiteColor);
+  border-radius: 10px 0px 10px 0px;
+}
+
+.read-more-btn {
+  position: relative;
+  padding-right: 20px;
+  display: inline-block;
+  color: var(--blackColor);
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.read-more-btn i {
+  right: 0;
+  top: 5px;
+  font-size: 15px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: absolute;
+  color: var(--blackColor);
+}
+
+.read-more-btn:hover {
+  color: var(--blackColor);
+}
+
+.read-more-btn:hover i {
+  color: var(--blackColor);
+}
+
+.default-button-2 {
+  border: 1px solid var(--mainColor);
+  background-color: transparent;
+  color: var(--blackColor);
+}
+
+.default-button-2::before {
+  background-color: var(--mainColor);
+}
+
+/*================================================
+Default Section Area CSS
+=================================================*/
+.default-section-heading {
+  margin-bottom: 20px;
+}
+
+.default-section-heading h6 {
+  font-size: var(--fontSize);
+  color: var(--mainColor);
+  font-weight: 600;
+}
+
+.default-section-heading h3 {
+  margin-top: 12px;
+  margin-bottom: 0px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.default-section-heading-middle {
+  max-width: 550px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.default-section-heading-middle h3 {
+  font-size: 48px;
+}
+
+/*================================================
+Main Banner Area CSS
+=================================================*/
+.main-banner {
+  padding-left: 100px;
+  padding-top: 30px;
+}
+
+.banner-text-area h6 {
+  padding: 8px 15px;
+  display: inline-block;
+  background-color: var(--whiteColor);
+  color: var(--mainColor);
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.banner-text-area h1 {
+  font-size: 50px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.banner-text-area h1 span {
+  color: var(--mainColor);
+}
+
+.banner-text-area .default-button {
+  margin-top: 20px;
+}
+
+.main-banner-img {
+  position: relative;
+  z-index: 9;
+}
+
+.main-banner-img .data-img {
+  position: absolute;
+  top: 100px;
+  left: 15%;
+  padding: 15px 30px;
+  -webkit-box-shadow: 0px 0px 10px -2px #dadada;
+          box-shadow: 0px 0px 10px -2px #dadada;
+  background-color: var(--whiteColor);
+}
+
+.main-banner-img .tech-img {
+  position: absolute;
+  top: 10px;
+  right: 10%;
+  padding: 15px 20px;
+  -webkit-box-shadow: 0px 0px 10px -2px #dadada;
+          box-shadow: 0px 0px 10px -2px #dadada;
+  background-color: var(--whiteColor);
+}
+
+.main-banner-img-area {
+  position: relative;
+}
+
+.main-banner-img-area span {
+  width: 65%;
+  height: 85%;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgba(194, 226, 226, 0.5);
+  position: absolute;
+  bottom: 10px;
+  left: 55%;
+  z-index: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.main-banner-img-area::before {
+  content: '';
+  width: 65%;
+  height: 85%;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgba(194, 226, 226, 0.5);
+  position: absolute;
+  bottom: 10px;
+  left: 45%;
+  z-index: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.main-banner-img-area::after {
+  content: '';
+  width: 65%;
+  height: 85%;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgba(194, 226, 226, 0.5);
+  z-index: 0;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+
+/*================================================
+Index 01 About Area CSS
+=================================================*/
+.about {
+  position: relative;
+}
+
+.about .shape1 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  -webkit-animation: half-spin 15s infinite linear forwards;
+          animation: half-spin 15s infinite linear forwards;
+}
+
+.about .shape2 {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  -webkit-animation: half-spin 15s infinite linear forwards;
+          animation: half-spin 15s infinite linear forwards;
+}
+
+.about .shape3 {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  -webkit-animation: left-right 5s infinite linear forwards;
+          animation: left-right 5s infinite linear forwards;
+}
+
+.skills-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.skills-item .skills-header {
+  position: relative;
+  margin-bottom: 15px;
+  font-family: var(--fontFamily2);
+}
+
+.skills-item .skills-header .skills-title {
+  margin-bottom: 0;
+  color: var(--blackColor);
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--fontFamily2);
+}
+
+.skills-item .skills-header .skills-percentage {
+  position: absolute;
+  right: 0;
+  top: -2px;
+  color: var(--mainColor);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.skills-item .skills-bar {
+  position: relative;
+  width: 100%;
+}
+
+.skills-item .skills-bar .bar-inner {
+  position: relative;
+  width: 100%;
+  border-radius: 30px;
+  border-top: 2px solid #364d55;
+  border-bottom: 2px solid #364d55;
+}
+
+.skills-item .skills-bar .bar-inner .bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 4px;
+  background: var(--mainColor);
+  -webkit-transition: all 2000ms ease;
+  transition: all 2000ms ease;
+  border-radius: 30px;
+  margin-top: -2px;
+}
+
+.progress-bar-area {
+  margin-top: 20px;
+}
+
+.about-text-area {
+  padding-left: 20px;
+}
+
+.about-text-area .default-button {
+  margin-top: 10px;
+}
+
+/*================================================
+Index 01 Service Area CSS
+=================================================*/
+.service-card {
+  background-color: var(--whiteColor);
+  padding: 30px 25px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.service-card .service-card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.service-card .service-card-header i {
+  width: 70px;
+  height: 70px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e8f6f5;
+  font-size: 45px;
+  color: var(--mainColor);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.service-card .service-card-header h4 {
+  padding-left: 15px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.service-card ul {
+  margin: 10px 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.service-card ul li {
+  color: var(--paragraphColor);
+  font-size: var(--fontSize);
+  margin-top: 8px;
+}
+
+.service-card ul li i {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.service-card .default-button {
+  margin-top: 10px;
+}
+
+.service-card:hover .service-card-header i {
+  color: var(--whiteColor);
+  background-color: var(--mainColor);
+}
+
+.service {
+  position: relative;
+}
+
+.service .shape6 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  -webkit-animation: half-spin 15s infinite linear forwards;
+          animation: half-spin 15s infinite linear forwards;
+}
+
+.service .shape4 {
+  position: absolute;
+  top: 25%;
+  right: 14%;
+}
+
+.service .shape4-1 {
+  position: absolute;
+  bottom: 15%;
+  left: 14%;
+  -webkit-animation: left-right 8s infinite linear forwards;
+          animation: left-right 8s infinite linear forwards;
+}
+
+.service .shape6-1 {
+  position: absolute;
+  bottom: 18%;
+  right: 10%;
+  -webkit-animation: half-spin 15s infinite linear forwards;
+          animation: half-spin 15s infinite linear forwards;
+}
+
+/*================================================
+Index 01 Why Choose Us Area CSS
+=================================================*/
+.why-we-text-area {
+  padding-right: 20px;
+}
+
+.why-we-list-card {
+  margin-top: 15px;
+  padding: 20px 15px 20px 35px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background-color: #f4f8fc;
+}
+
+.why-we-list-card p {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  color: var(--blackColor);
+  font-size: 18px;
+}
+
+.why-we-list-card:hover {
+  background-color: var(--mainColor);
+}
+
+.why-we-list-card:hover p {
+  color: var(--whiteColor);
+}
+
+.why-we-img-area {
+  position: relative;
+  padding: 15px 15px 50px 50px;
+}
+
+.why-we-img-area img {
+  border-radius: 10px 50px 10px 0px;
+  border: 10px solid var(--whiteColor);
+  -webkit-box-shadow: 0px 0px 10px -5px #c2c2c2;
+          box-shadow: 0px 0px 10px -5px #c2c2c2;
+  position: relative;
+}
+
+.why-we-img-area .shape9 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0px;
+  z-index: 0;
+}
+
+.why-we-img-area .shape10 {
+  position: absolute;
+  bottom: 25px;
+  right: 0;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0px;
+  z-index: 0;
+}
+
+.why-we-img-area span {
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+  background-color: var(--mainColor);
+  border-radius: 0px 30px 0px 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.why-we-img-area .video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.why-we-img-area .video-play a {
+  width: 80px;
+  height: 80px;
+  font-size: 30px;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--whiteColor);
+  background-color: var(--mainColor);
+  -webkit-box-shadow: 0px 0px 0px 5px var(--whiteColor);
+          box-shadow: 0px 0px 0px 5px var(--whiteColor);
+  -webkit-animation: player-button 4s infinite linear forwards;
+          animation: player-button 4s infinite linear forwards;
+}
+
+.why-we {
+  position: relative;
+  overflow: hidden;
+}
+
+.why-we .shape7 {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  z-index: 0;
+}
+
+.why-we .shape8 {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: 0;
+}
+
+/*================================================
+Index 01 Fun Facts area Area CSS
+=================================================*/
+.fun-facts-card {
+  position: relative;
+  margin-top: 30px;
+  padding: 25px 15px 30px 110px;
+  background-color: var(--mainColor);
+}
+
+.fun-facts-card i {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: var(--whiteColor);
+  font-size: 60px;
+}
+
+.fun-facts-card i::before {
+  line-height: 2;
+}
+
+.fun-facts-card h2 {
+  margin: 0px;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--whiteColor);
+  font-family: var(--fontFamily);
+}
+
+.fun-facts-card p {
+  font-weight: 600;
+  font-size: var(--fontSize);
+  color: var(--whiteColor);
+}
+
+.fun-facts {
+  position: relative;
+}
+
+.fun-facts .shape11 {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  -webkit-animation: half-spin 15s infinite linear forwards;
+          animation: half-spin 15s infinite linear forwards;
+}
+
+.fun-facts .shape12 {
+  position: absolute;
+  right: 10%;
+  top: 15%;
+  -webkit-animation: half-spin 15s infinite linear forwards;
+          animation: half-spin 15s infinite linear forwards;
+}
+
+.fun-facts .shape12-1 {
+  position: absolute;
+  left: 10%;
+  bottom: 15%;
+  -webkit-animation: half-spin 15s infinite linear forwards;
+          animation: half-spin 15s infinite linear forwards;
+}
+
+.fun-facts .shape13 {
+  position: absolute;
+  right: 10%;
+  bottom: 15%;
+  -webkit-animation: half-spin 15s infinite linear forwards;
+          animation: half-spin 15s infinite linear forwards;
+}
+
+/*================================================
+Index 01 Case Study area Area CSS
+=================================================*/
+.case-study-card {
+  background-color: #f4f8fc;
+  position: relative;
+  margin-top: 30px;
+}
+
+.case-study-card .case-study-img {
+  position: relative;
+}
+
+.case-study-card .case-study-img i {
+  width: 80px;
+  height: 65px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  color: var(--whiteColor);
+  background-color: rgba(2, 152, 148, 0.6);
+  border-radius: 0px 30px 30px 0;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+}
+
+.case-study-card .case-study-text {
+  padding: 30px 20px;
+}
+
+.case-study-card .case-study-text h4 {
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.case-study-card:hover .case-study-img i {
+  background-color: var(--mainColor);
+}
+
+.case-study {
+  position: relative;
+}
+
+.case-study .shape14 {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  -webkit-animation: half-spin 15s infinite linear forwards;
+          animation: half-spin 15s infinite linear forwards;
+}
+
+.case-study .shape15 {
+  position: absolute;
+  top: 18%;
+  right: 10%;
+  -webkit-animation: zoomIn 5s infinite linear forwards;
+          animation: zoomIn 5s infinite linear forwards;
+}
+
+.case-study .shape16 {
+  position: absolute;
+  bottom: 18%;
+  left: 0%;
+  -webkit-animation: topBottom 5s infinite linear forwards;
+          animation: topBottom 5s infinite linear forwards;
+}
+
+.case-study .shape17 {
+  position: absolute;
+  bottom: 18%;
+  right: 10%;
+  -webkit-animation: half-spin 15s infinite linear forwards;
+          animation: half-spin 15s infinite linear forwards;
+}
+
+/*================================================
+Index 01 Team area Area CSS
+=================================================*/
+.team-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/team/team-bg.png");
+}
+
+.team-card {
+  overflow: hidden;
+  margin-top: 30px;
+  position: relative;
+  background-color: var(--whiteColor);
+}
+
+.team-card .team-card-img {
+  position: relative;
+}
+
+.team-card .team-card-img .team-social-icons {
+  position: absolute;
+  left: -0%;
+  bottom: 15px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  background-color: var(--mainColor);
+  padding: 10px 20px 10px 15px;
+  border-radius: 0px 20px 20px 0px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.team-card .team-card-img .team-social-icons ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.team-card .team-card-img .team-social-icons ul li {
+  display: inline-block;
+}
+
+.team-card .team-card-img .team-social-icons ul li a {
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--mainColor);
+  background-color: var(--whiteColor);
+}
+
+.team-card .team-card-text {
+  padding: 30px 25px 25px 25px;
+}
+
+.team-card .team-card-text h4 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.team-card:hover .team-card-img .team-social-icons {
+  left: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.team-slider-area .owl-nav {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+
+.team-slider-area .owl-nav button {
+  opacity: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  color: var(--mainColor) !important;
+  border: 1px solid var(--mainColor) !important;
+}
+
+.team-slider-area .owl-nav .owl-prev {
+  position: absolute;
+  left: 0px;
+}
+
+.team-slider-area .owl-nav .owl-next {
+  position: absolute;
+  right: 0px;
+}
+
+.team-slider-area:hover .owl-nav button {
+  opacity: 1;
+}
+
+.team-slider-area:hover .owl-nav .owl-prev {
+  left: -45px;
+}
+
+.team-slider-area:hover .owl-nav .owl-next {
+  right: -45px;
+}
+
+.team {
+  position: relative;
+}
+
+.team .shape18 {
+  position: absolute;
+  right: 10%;
+  top: 15%;
+  -webkit-animation: topBottom 5s infinite linear forwards;
+          animation: topBottom 5s infinite linear forwards;
+}
+
+.team .shape19 {
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+  -webkit-animation: topBottom 5s infinite linear forwards;
+          animation: topBottom 5s infinite linear forwards;
+}
+
+/*================================================
+Index 01 Testimonial area Area CSS
+=================================================*/
+.testimonial-card {
+  background-color: #fcfcfc;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  margin-top: 30px;
+  position: relative;
+}
+
+.testimonial-card .fa-quote-right {
+  position: absolute;
+  right: 30px;
+  top: 40px;
+  font-size: 55px;
+  color: #6fb8b7;
+}
+
+.testimonial-card .testimonial-card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial-card .testimonial-card-header img {
+  border-radius: 0px 0px 50% 0px;
+  margin-right: 15px;
+  max-width: 100% !important;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.testimonial-card .testimonial-card-header h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.testimonial-card .testimonial-card-header p {
+  font-size: 14px;
+}
+
+.testimonial-card .testimonial-text {
+  padding: 20px 25px;
+}
+
+.testimonial-card .testimonial-text p {
+  color: #353535;
+  margin-bottom: 20px;
+  font-size: var(--fontSize);
+}
+
+.testimonial-card .testimonial-card-footer {
+  border-top: 1px solid #eeeeee;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial-card .testimonial-card-footer ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.testimonial-card .testimonial-card-footer ul li {
+  display: inline-block;
+}
+
+.testimonial-card:hover {
+  background-color: #f4f8fc;
+}
+
+.stars ul li {
+  color: #f5a623;
+}
+
+.social-icons ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-icons ul li {
+  display: inline-block;
+}
+
+.social-icons ul li a {
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--mainColor);
+  background-color: var(--whiteColor);
+}
+
+.testimonial-slider-area .owl-nav {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+
+.testimonial-slider-area .owl-nav button {
+  opacity: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  color: var(--mainColor) !important;
+  border: 1px solid var(--mainColor) !important;
+}
+
+.testimonial-slider-area .owl-nav .owl-prev {
+  position: absolute;
+  left: 0px;
+}
+
+.testimonial-slider-area .owl-nav .owl-next {
+  position: absolute;
+  right: 0px;
+}
+
+.testimonial-slider-area:hover .owl-nav button {
+  opacity: 1;
+}
+
+.testimonial-slider-area:hover .owl-nav .owl-prev {
+  left: -45px;
+}
+
+.testimonial-slider-area:hover .owl-nav .owl-next {
+  right: -45px;
+}
+
+/*================================================
+Index 01 Brands area Area CSS
+=================================================*/
+.brand-card {
+  text-align: center;
+}
+
+.brand-card img {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brand-card p {
+  color: var(--blackColor);
+  padding-top: 10px;
+  line-height: 1;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.brand-card:hover o {
+  color: var(--mainColor);
+}
+
+/*================================================
+Index 01 Blog area Area CSS
+=================================================*/
+.blog-card {
+  margin-top: 30px;
+  position: relative;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.blog-card .blog-card-text {
+  padding: 30px 20px 25px 20px;
+}
+
+.blog-card .blog-card-text ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.blog-card .blog-card-text ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.blog-card .blog-card-text ul li i {
+  font-size: 15px;
+  color: var(--mainColor);
+  position: relative;
+  top: -1px;
+}
+
+.blog-card .blog-card-text ul li span {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: var(--fontFamily2);
+}
+
+.blog-card .blog-card-text h4 {
+  padding: 12px 0px 15px 0px;
+  font-size: 24px;
+}
+
+.blog-card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.blog {
+  position: relative;
+}
+
+.blog .shape20 {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  -webkit-animation: left-right 8s infinite linear forwards;
+          animation: left-right 8s infinite linear forwards;
+}
+
+.blog .shape21 {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  -webkit-animation: half-spin 5s infinite linear forwards;
+          animation: half-spin 5s infinite linear forwards;
+}
+
+.blog .shape22 {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  -webkit-animation: topBottom 5s infinite linear forwards;
+          animation: topBottom 5s infinite linear forwards;
+}
+
+.blog .shape11 {
+  position: absolute;
+  bottom: 15%;
+  right: 8%;
+  -webkit-animation: half-spin 15s infinite linear forwards;
+          animation: half-spin 15s infinite linear forwards;
+}
+
+/*================================================
+Index 02 Home Banner Area CSS
+=================================================*/
+.home-banner {
+  background-color: #e7fcfe;
+  padding: 100px;
+  position: relative;
+}
+
+.home-banner .banner-text-area p {
+  max-width: 720px;
+}
+
+.home-banner .shape23 {
+  position: absolute;
+  top: 8%;
+  left: 10%;
+  -webkit-animation: zoomIn 5s infinite linear forwards;
+          animation: zoomIn 5s infinite linear forwards;
+}
+
+.home-banner .shape24 {
+  position: absolute;
+  top: 15%;
+  left: 40%;
+  -webkit-animation: topBottom 5s infinite linear forwards;
+          animation: topBottom 5s infinite linear forwards;
+}
+
+.home-banner .shape25 {
+  position: absolute;
+  top: 5%;
+  right: 8%;
+  -webkit-animation: half-spin 15s infinite linear forwards;
+          animation: half-spin 15s infinite linear forwards;
+}
+
+.home-banner .shape26 {
+  position: absolute;
+  bottom: 10%;
+  left: 30%;
+  -webkit-animation: topBottom 5s infinite linear forwards;
+          animation: topBottom 5s infinite linear forwards;
+}
+
+/*================================================
+Index 02 About Banner Area CSS
+=================================================*/
+.about-text-area-2 p {
+  margin-bottom: 0px;
+}
+
+.about-text-area-2 .default-button {
+  margin-top: 30px;
+}
+
+.about-card {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.about-card i {
+  width: 80px;
+  height: 70px;
+  font-size: 45px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--mainColor);
+  background-color: #d9f0ef;
+}
+
+.about-card h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding-left: 15px;
+  margin-bottom: 0px;
+}
+
+.ic-6610f2 i {
+  background-color: rgba(102, 16, 242, 0.15);
+  color: #6610f2;
+}
+
+.ic-e83e8c i {
+  background-color: rgba(232, 62, 140, 0.15);
+  color: #e83e8c;
+}
+
+.ic-007bff i {
+  background-color: rgba(0, 123, 255, 0.15);
+  color: #007bff;
+}
+
+.about {
+  position: relative;
+}
+
+.about .shape33 {
+  position: absolute;
+  left: 10px;
+  bottom: 20%;
+  -webkit-animation: topBottom 5s infinite forwards linear;
+          animation: topBottom 5s infinite forwards linear;
+}
+
+.about .shape27 {
+  position: absolute;
+  right: 0px;
+  top: 15%;
+  -webkit-animation: topBottom 5s infinite forwards linear;
+          animation: topBottom 5s infinite forwards linear;
+}
+
+.about .shape28 {
+  position: absolute;
+  right: 10%;
+  bottom: 15%;
+  -webkit-animation: half-spin 15s infinite forwards linear;
+          animation: half-spin 15s infinite forwards linear;
+}
+
+/*================================================
+Index 02 Services Area CSS
+=================================================*/
+.sc-3dce77 .service-card-header i {
+  background-color: rgba(61, 206, 119, 0.15);
+  color: #3dce77;
+}
+
+.sc-3dce77:hover .service-card-header i {
+  background-color: #3dce77;
+  color: #ffffff;
+}
+
+.sc-ffca40 .service-card-header i {
+  background-color: rgba(255, 202, 64, 0.15);
+  color: #ffca40;
+}
+
+.sc-ffca40:hover .service-card-header i {
+  background-color: #ffca40;
+  color: #ffffff;
+}
+
+.sc-ff414b .service-card-header i {
+  background-color: rgba(255, 65, 75, 0.15);
+  color: #ff414b;
+}
+
+.sc-ff414b:hover .service-card-header i {
+  background-color: #ff414b;
+  color: #ffffff;
+}
+
+.sc-0064fb .service-card-header i {
+  background-color: rgba(0, 100, 251, 0.15);
+  color: #0064fb;
+}
+
+.sc-0064fb:hover .service-card-header i {
+  background-color: #0064fb;
+  color: #ffffff;
+}
+
+.sc-ff6d3d .service-card-header i {
+  background-color: rgba(255, 109, 61, 0.15);
+  color: #ff6d3d;
+}
+
+.sc-ff6d3d:hover .service-card-header i {
+  background-color: #ff6d3d;
+  color: #ffffff;
+}
+
+.service {
+  position: relative;
+}
+
+.service .shape29 {
+  position: absolute;
+  left: 0px;
+  top: 20%;
+  -webkit-animation: topBottom 5s infinite forwards linear;
+          animation: topBottom 5s infinite forwards linear;
+}
+
+.service .shape30 {
+  position: absolute;
+  right: 10%;
+  top: 15%;
+  -webkit-animation: topBottom 5s infinite forwards linear;
+          animation: topBottom 5s infinite forwards linear;
+}
+
+.service .shape31 {
+  position: absolute;
+  right: 10%;
+  bottom: 50%;
+  -webkit-animation: half-spin 15s infinite forwards linear;
+          animation: half-spin 15s infinite forwards linear;
+}
+
+.service .shape15 {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  -webkit-animation: left-right 5s infinite forwards linear;
+          animation: left-right 5s infinite forwards linear;
+}
+
+.service .shape11 {
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  -webkit-animation: half-spin 15s infinite forwards linear;
+          animation: half-spin 15s infinite forwards linear;
+}
+
+/*================================================
+Index 02 Why Choose Us Area CSS
+=================================================*/
+.why-we-text-2 .default-section-heading h3 {
+  margin-top: 0px;
+}
+
+.why-we-text-2 .default-button {
+  margin-top: 15px;
+}
+
+.why-we {
+  position: relative;
+}
+
+.why-we .shape11 {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  -webkit-animation: half-spin 15s infinite linear forwards;
+          animation: half-spin 15s infinite linear forwards;
+}
+
+.why-we .shape32 {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  -webkit-animation: left-right 5s infinite linear forwards;
+          animation: left-right 5s infinite linear forwards;
+}
+
+.why-we .shape33 {
+  position: absolute;
+  left: 14%;
+  bottom: 12%;
+  -webkit-animation: zoomIn 5s infinite linear forwards;
+          animation: zoomIn 5s infinite linear forwards;
+}
+
+/*================================================
+Index 02 Pricing Area CSS
+=================================================*/
+.pricing-card {
+  background-color: #f6f7fb;
+  padding: 30px 30px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  -webkit-animation: bounceIn 1s 1 ease-in-out;
+          animation: bounceIn 1s 1 ease-in-out;
+}
+
+.pricing-card .popular {
+  padding: 10px 15px;
+  width: 200px;
+  text-align: center;
+  color: var(--blackColor);
+  background-color: var(--whiteColor);
+  position: absolute;
+  right: -55px;
+  top: 30px;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+  -webkit-animation: text-color 5s infinite linear forwards;
+          animation: text-color 5s infinite linear forwards;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--fontFamily2);
+}
+
+.pricing-card .pricing-card-header {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.pricing-card .pricing-card-header h4 {
+  font-size: 24px;
+  display: inline-block;
+  padding: 12px 10px;
+  width: 200px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.pricing-card .pricing-card-header h4::before {
+  content: '';
+  width: 200px;
+  height: 100%;
+  z-index: 0;
+  background-color: var(--whiteColor);
+  border-radius: 0px 25px 25px 0%;
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.pricing-card .pricing-card-header h4 span {
+  position: relative;
+  z-index: 9;
+}
+
+.pricing-card .pricing-card-header h2 {
+  font-size: 48px;
+  font-family: var(--fontFamily);
+  margin-bottom: 0px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.pricing-card .pricing-card-header h2 sub {
+  font-size: 14px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  font-family: var(--fontFamily2);
+  color: var(--paragraphColor);
+}
+
+.pricing-card .pricing-card-header p {
+  font-size: 14px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.pricing-card ul {
+  margin: 20px 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.pricing-card ul li {
+  margin-top: 10px;
+  color: var(--paragraphColor);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily2);
+}
+
+.pricing-card ul li i {
+  display: inline-block;
+  text-align: center;
+  margin-right: 5px;
+  width: 20px;
+}
+
+.pricing-card .default-button {
+  margin-top: 10px;
+}
+
+.pricing-card:hover {
+  background-color: var(--mainColor);
+}
+
+.pricing-card:hover .pricing-card-header h2, .pricing-card:hover .pricing-card-header p {
+  color: var(--whiteColor);
+}
+
+.pricing-card:hover .pricing-card-header h2 sub, .pricing-card:hover .pricing-card-header p sub {
+  color: var(--whiteColor);
+}
+
+.pricing-card:hover ul li {
+  color: var(--whiteColor);
+}
+
+.pricing-card:hover .default-button {
+  border-color: var(--whiteColor);
+  background-color: var(--whiteColor);
+}
+
+.pricing-active {
+  background-color: var(--mainColor);
+}
+
+.pricing-active .pricing-card-header h2, .pricing-active .pricing-card-header p {
+  color: var(--whiteColor);
+}
+
+.pricing-active .pricing-card-header h2 sub, .pricing-active .pricing-card-header p sub {
+  color: var(--whiteColor);
+}
+
+.pricing-active ul li {
+  color: var(--whiteColor);
+}
+
+.pricing-active .default-button {
+  border-color: var(--whiteColor);
+  background-color: var(--whiteColor);
+}
+
+.wrapper-full.hide {
+  display: none;
+}
+
+.plans-switcher {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.plans-switcher .toggle {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 8px;
+  cursor: pointer;
+  position: relative;
+  width: 80px;
+  height: 25px;
+  border-radius: 100px;
+  background-color: var(--mainColor);
+  overflow: hidden;
+}
+
+.plans-switcher .toggle .b {
+  display: block;
+}
+
+.plans-switcher .toggle .switch {
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  bottom: 8px;
+  right: 58.5%;
+  background-color: #fff;
+  border-radius: 50px;
+  z-index: 1;
+  -webkit-transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-delay: 0s, 0.08s;
+  transition-delay: 0s, 0.08s;
+}
+
+.plans-switcher .toggle .check {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 6;
+}
+
+.plans-switcher .toggle .check:checked ~ .switch {
+  right: 5px;
+  left: 57.5%;
+  -webkit-transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-delay: 0.08s, 0s;
+  transition-delay: 0.08s, 0s;
+}
+
+.plans-switcher .toggler {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 8px;
+  cursor: pointer;
+  color: #2e2f46;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  font-size: var(--fontSize);
+  font-weight: 600;
+  font-family: var(--fontFamily);
+}
+
+.plans-switcher .toggler.toggler--is-active {
+  color: var(--mainColor);
+}
+
+.pricing {
+  position: relative;
+}
+
+.pricing .shape36 {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  -webkit-animation: topBottom 5s infinite linear forwards;
+          animation: topBottom 5s infinite linear forwards;
+}
+
+.pricing .shape18 {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  -webkit-animation: topBottom 5s infinite linear forwards;
+          animation: topBottom 5s infinite linear forwards;
+}
+
+.pricing .shape14 {
+  position: absolute;
+  bottom: 15%;
+  right: 8%;
+  -webkit-animation: half-spin 15s infinite linear forwards;
+          animation: half-spin 15s infinite linear forwards;
+}
+
+/*================================================
+Index 02 Case Study Area CSS
+=================================================*/
+.case-study-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/case-study/case-bg2.jpg");
+}
+
+.case-study-card2 {
+  background-color: var(--whiteColor);
+}
+
+.case-study-card2 .case-study-img {
+  background-color: #e9e9e9;
+}
+
+.case-study-slider .owl-nav {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+
+.case-study-slider .owl-nav button {
+  opacity: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  color: var(--mainColor) !important;
+  border: 1px solid var(--mainColor) !important;
+}
+
+.case-study-slider .owl-nav .owl-prev {
+  position: absolute;
+  left: 0px;
+}
+
+.case-study-slider .owl-nav .owl-next {
+  position: absolute;
+  right: 0px;
+}
+
+.case-study-slider:hover .owl-nav button {
+  opacity: 1;
+}
+
+.case-study-slider:hover .owl-nav .owl-prev {
+  left: -45px;
+}
+
+.case-study-slider:hover .owl-nav .owl-next {
+  right: -45px;
+}
+
+/*================================================
+Index 02 Team Area CSS
+=================================================*/
+.team-card-2 {
+  margin-top: 30px;
+}
+
+.team-card-2 .team-card-img {
+  background-color: #e9e9e9;
+}
+
+.team-card-2 .team-card-text {
+  padding: 25px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background-color: var(--whiteColor);
+  border: 1px solid rgba(2, 152, 148, 0.2);
+  border-top: 0px;
+}
+
+.team-card-2 .team-card-text .team-card-text-intro h4 {
+  font-size: 24px;
+  margin-bottom: 0px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.team-card-2 .team-card-text .team-card-text-intro p {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.team-card-2 .team-card-text .team-social-icons ul li a {
+  background-color: #f9f9f9;
+}
+
+.team-card-2:hover .team-card-text {
+  background-color: var(--mainColor);
+}
+
+.team-card-2:hover .team-card-text .team-card-text-intro h4, .team-card-2:hover .team-card-text .team-card-text-intro p {
+  color: var(--whiteColor);
+}
+
+.team {
+  position: relative;
+}
+
+.team .shape34 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  -webkit-animation: left-right 5s infinite linear forwards;
+          animation: left-right 5s infinite linear forwards;
+}
+
+.team .shape36 {
+  position: absolute;
+  bottom: 15%;
+  left: 0%;
+  -webkit-animation: topBottom 5s infinite linear forwards;
+          animation: topBottom 5s infinite linear forwards;
+}
+
+.team .shape35 {
+  position: absolute;
+  top: 15%;
+  right: 8%;
+  -webkit-animation: half-spin 15s infinite linear forwards;
+          animation: half-spin 15s infinite linear forwards;
+}
+
+.team .shape37 {
+  position: absolute;
+  bottom: 10%;
+  right: 14.5%;
+  -webkit-animation: half-spin 15s infinite linear forwards;
+          animation: half-spin 15s infinite linear forwards;
+}
+
+/*================================================
+Index 02 Testimonial Area CSS
+=================================================*/
+.testimonial-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/testimonial/testimonial-bg2.jpg");
+}
+
+.testimonial-card-2 {
+  background-color: #fcfcfc;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  margin-top: 30px;
+  position: relative;
+  padding: 30px 30px 25px 30px;
+}
+
+.testimonial-card-2 .fa-quote-right {
+  position: absolute;
+  right: 30px;
+  top: 40px;
+  font-size: 55px;
+  color: #6fb8b7;
+  -webkit-animation: topBottom 8s infinite linear forwards;
+          animation: topBottom 8s infinite linear forwards;
+}
+
+.testimonial-card-2 .testimonial-card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.testimonial-card-2 .testimonial-card-header img {
+  margin-right: 15px;
+  max-width: 100% !important;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.testimonial-card-2 .testimonial-card-header h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.testimonial-card-2 .testimonial-card-header p {
+  font-size: 14px;
+}
+
+.testimonial-card-2:hover {
+  background-color: var(--mainColor);
+}
+
+.testimonial-card-2:hover .fa-quote-right {
+  color: var(--whiteColor);
+}
+
+.testimonial-card-2:hover .testimonial-card-header h4, .testimonial-card-2:hover .testimonial-card-header p {
+  color: var(--whiteColor);
+}
+
+.testimonial-card-2:hover p {
+  color: var(--whiteColor);
+}
+
+/*================================================
+Index 02 Blog Card Area CSS
+=================================================*/
+.blog-card-2 img {
+  background-color: #f9f9f9;
+}
+
+.blog-card-2 .blog-card-text h4 {
+  padding: 12px 0px 5px 0px;
+}
+
+/*================================================
+Index 03 Banner Area CSS
+=================================================*/
+.banner-single-slide {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/banner/banner3-1.jpg");
+  position: relative;
+}
+
+.banner-single-slide::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.banner-text-area-3 {
+  position: relative;
+  text-align: center;
+  padding-top: 220px;
+  padding-bottom: 250px;
+}
+
+.banner-text-area-3 h6 {
+  background-color: transparent;
+  border: 1px solid var(--mainColor);
+  color: var(--whiteColor);
+}
+
+.banner-text-area-3 h1 {
+  color: var(--whiteColor);
+}
+
+.banner-text-area-3 p {
+  max-width: 720px;
+  color: var(--whiteColor);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner-text-area-3 .default-button {
+  border: 1px solid var(--mainColor);
+}
+
+.bss-2 {
+  background-image: url("../images/banner/banner3-2.jpg");
+}
+
+.bss-3 {
+  background-image: url("../images/banner/banner3-3.jpg");
+}
+
+.banner-slider-area-3 .owl-nav {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+
+.banner-slider-area-3 .owl-nav button {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  color: var(--whiteColor) !important;
+  border: 1px solid var(--whiteColor) !important;
+}
+
+.banner-slider-area-3 .owl-nav .owl-prev {
+  position: absolute;
+  left: 5%;
+}
+
+.banner-slider-area-3 .owl-nav .owl-next {
+  position: absolute;
+  right: 5%;
+}
+
+/*================================================
+Index 03 Banner Area CSS
+=================================================*/
+.feature-content-area {
+  position: relative;
+  margin-top: -100px;
+  z-index: 9;
+}
+
+.feature-card-3 {
+  margin-top: 30px;
+  padding: 30px 25px 25px 25px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background-color: var(--whiteColor);
+  -webkit-box-shadow: 0px 0px 20px -5px #a0a0a0;
+          box-shadow: 0px 0px 20px -5px #a0a0a0;
+}
+
+.feature-card-3 .feature-card-3-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.feature-card-3 .feature-card-3-header i {
+  width: 60px;
+  height: 60px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 35px;
+  color: var(--mainColor);
+  background-color: #dbf0f0;
+  margin-right: 10px;
+}
+
+.feature-card-3 .feature-card-3-header h4 {
+  font-size: 24px;
+  margin-bottom: 0px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.feature-card-3 p {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.feature-card-3:hover {
+  background-color: var(--mainColor);
+}
+
+.feature-card-3:hover .feature-card-3-header h4 {
+  color: var(--whiteColor);
+}
+
+.feature-card-3:hover p {
+  color: var(--whiteColor);
+}
+
+/*================================================
+Index 03 About Area CSS
+=================================================*/
+.about-list-3 ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.about-list-3 ul li {
+  margin-top: 10px;
+  padding-left: 25px;
+  position: relative;
+  color: #202020;
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily2);
+}
+
+.about-list-3 ul li::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: var(--mainColor);
+  -webkit-box-shadow: -1px -1px 1px 1px #0d504e;
+          box-shadow: -1px -1px 1px 1px #0d504e;
+  position: absolute;
+  top: 4px;
+  left: 0px;
+}
+
+.about-text-area-3 .default-button {
+  margin-top: 25px;
+}
+
+.about-3-img {
+  padding: 50px;
+  position: relative;
+}
+
+.about-3-img::before {
+  content: '';
+  width: 95%;
+  height: 95%;
+  z-index: 0;
+  border-radius: 50%;
+  border: 10px solid var(--mainColor);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.about-3-img img {
+  position: relative;
+  z-index: 9;
+  border-radius: 50px 0px 50px 0px;
+}
+
+.about {
+  position: relative;
+}
+
+.about .shape35 {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  -webkit-animation: half-spin 15s infinite linear;
+          animation: half-spin 15s infinite linear;
+}
+
+.about .shape38 {
+  position: absolute;
+  top: 0%;
+  right: 5%;
+  -webkit-animation: topBottom 5s infinite linear;
+          animation: topBottom 5s infinite linear;
+}
+
+.about .shape39 {
+  position: absolute;
+  bottom: 10%;
+  left: 35%;
+  -webkit-animation: topBottom 5s infinite linear;
+          animation: topBottom 5s infinite linear;
+}
+
+/*================================================
+Index 03 Service Area CSS
+=================================================*/
+.service-card-3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/service/s31.jpg");
+  position: relative;
+}
+
+.service-card-3::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.service-card-3 .service-card-content {
+  position: relative;
+}
+
+.service-card-3 .service-card-content .service-card-header i {
+  background-color: transparent;
+  border: 1px solid #eeeeee;
+  color: var(--whiteColor);
+}
+
+.service-card-3 .service-card-content .service-card-header h4 a {
+  color: var(--whiteColor);
+}
+
+.service-card-3 .service-card-content p {
+  color: var(--whiteColor);
+}
+
+.service-card-3 .service-card-content ul li {
+  color: var(--whiteColor);
+}
+
+.service-card-3 .service-card-content .default-button {
+  color: var(--whiteColor);
+  border-color: var(--whiteColor);
+}
+
+.service-card-3:hover::before {
+  background-color: var(--mainColor);
+}
+
+.service-slider-area-3 .owl-nav {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+
+.service-slider-area-3 .owl-nav button {
+  opacity: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  color: var(--mainColor) !important;
+  border: 1px solid var(--mainColor) !important;
+}
+
+.service-slider-area-3 .owl-nav .owl-prev {
+  position: absolute;
+  left: 0px;
+}
+
+.service-slider-area-3 .owl-nav .owl-next {
+  position: absolute;
+  right: 0px;
+}
+
+.service-slider-area-3:hover .owl-nav button {
+  opacity: 1;
+}
+
+.service-slider-area-3:hover .owl-nav .owl-prev {
+  left: -45px;
+}
+
+.service-slider-area-3:hover .owl-nav .owl-next {
+  right: -45px;
+}
+
+.service {
+  position: relative;
+}
+
+.service .shape33 {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  -webkit-animation: left-right 5s infinite linear forwards;
+          animation: left-right 5s infinite linear forwards;
+}
+
+.service .shape40 {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  -webkit-animation: half-spin 15s infinite linear forwards;
+          animation: half-spin 15s infinite linear forwards;
+}
+
+.service .shape28 {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  -webkit-animation: topBottom 5s infinite linear forwards;
+          animation: topBottom 5s infinite linear forwards;
+}
+
+/*================================================
+Index 03 Fun Facts Area CSS
+=================================================*/
+.ff-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/fun-facts-bg.jpg");
+  position: relative;
+}
+
+.ff-bg::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.ff-bg .fun-facts-card {
+  background-color: transparent;
+  border: 1px solid #eeeeee;
+}
+
+/*================================================
+Index 03 Offers Area CSS
+=================================================*/
+.offer-img {
+  position: relative;
+  text-align: center;
+}
+
+.offer-img .video-play {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.offer-img .video-play a {
+  width: 80px;
+  height: 80px;
+  z-index: 9;
+  font-size: 30px;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--blackColor);
+  background-color: var(--whiteColor);
+  border: 10px solid var(--mainColor);
+  position: relative;
+}
+
+.offer-img .video-play a::before {
+  content: '';
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid var(--mainColor);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: player-button2 2s infinite linear forwards;
+          animation: player-button2 2s infinite linear forwards;
+}
+
+.offer-text-area .nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.offer-text-area .nav .nav-link {
+  border: 0px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--fontFamily2);
+  border-bottom: 2px solid var(--mainColor);
+  border-color: transparent;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.offer-text-area .nav .active {
+  border-bottom: 2px solid var(--mainColor);
+}
+
+.offer-text-area .fade {
+  -webkit-animation: fadeInUp .2s 1 linear;
+          animation: fadeInUp .2s 1 linear;
+}
+
+/*================================================
+Index 03 Faq Area CSS
+=================================================*/
+.accordion-item {
+  margin-top: 20px;
+}
+
+.accordion-item .accordion-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 5px 0px 0px;
+  overflow: hidden;
+  color: var(--blackColor);
+  font-family: var(--fontFamily);
+  border: 0px solid #eeeeee;
+  background-color: #f9f9f9;
+  position: relative;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.accordion-item .accordion-button::after {
+  display: none;
+}
+
+.accordion-item .accordion-button .fa-plus-circle {
+  display: block;
+}
+
+.accordion-item .accordion-button .fa-minus-circle {
+  display: none;
+}
+
+.accordion-item .accordion-button i {
+  width: 50px;
+  height: 50px;
+  color: var(--whiteColor);
+  margin: 3px 10px 3px 3px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: var(--mainColor);
+  position: relative;
+}
+
+.accordion-item .accordion-button i::before {
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.accordion-item .accordion-button:not(.collapsed) {
+  background-color: var(--mainColor) !important;
+  color: var(--whiteColor);
+}
+
+.accordion-item .accordion-button:not(.collapsed) i {
+  background-color: var(--whiteColor);
+  color: var(--mainColor);
+}
+
+.accordion-item .accordion-button:not(.collapsed) i::before {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.accordion-item .accordion-button:not(.collapsed) .fa-plus-circle {
+  display: none;
+}
+
+.accordion-item .accordion-button:not(.collapsed) .fa-minus-circle {
+  display: block;
+}
+
+.accordion-item .accordion-body {
+  border-bottom: 1px solid #eeeeee;
+  color: var(--paragraphColor);
+  font-family: var(--fontFamily2);
+  font-size: var(--fontSize);
+}
+
+.faq-text-area .accordion {
+  margin-top: 30px;
+}
+
+.faq-text-area .default-button {
+  margin-top: 25px;
+}
+
+.faq {
+  position: relative;
+}
+
+.faq .shape14 {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  -webkit-animation: half-spin 15s infinite linear forwards;
+          animation: half-spin 15s infinite linear forwards;
+}
+
+.faq .shape6 {
+  position: absolute;
+  left: 55%;
+  top: 15%;
+  -webkit-animation: half-spin 15s infinite linear forwards;
+          animation: half-spin 15s infinite linear forwards;
+}
+
+.faq .shape21 {
+  position: absolute;
+  left: 2%;
+  bottom: 10%;
+  -webkit-animation: half-spin 15s infinite linear forwards;
+          animation: half-spin 15s infinite linear forwards;
+}
+
+.faq-contact form .form-control {
+  background-color: var(--whiteColor) !important;
+}
+
+/*================================================
+Index 03 Team Area CSS
+=================================================*/
+.team-bg-3 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/team/team-3-bg.jpg");
+  position: relative;
+}
+
+.team-card-3 {
+  position: relative;
+  margin-top: 30px;
+}
+
+.team-card-3 .team-card-text {
+  padding: 15px;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#00000090), color-stop(#00000060), color-stop(#00000050), to(#00000000));
+  background-image: linear-gradient(to top, #00000090, #00000060, #00000050, #00000000);
+}
+
+.team-card-3 .team-card-text h4 {
+  color: var(--whiteColor);
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.team-card-3 .team-card-text p {
+  color: var(--whiteColor);
+}
+
+.team-card-3 .team-card-text .team-social-icons {
+  opacity: 0;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.team-card-3:hover .team-card-text .team-social-icons {
+  opacity: 1;
+}
+
+/*================================================
+Index 03 Testimonial Area CSS
+=================================================*/
+.testimonial-single-slide3 {
+  margin-top: 30px;
+  text-align: center;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial-single-slide3 img {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial-single-slide3 p {
+  margin: 15px 0px;
+  color: var(--blackColor);
+  font-weight: 600;
+}
+
+.testimonial-single-slide3 h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.testimonial-single-slide3 h6 {
+  margin-bottom: 0px;
+  color: var(--paragraphColor);
+  font-size: 14px;
+  font-family: var(--fontFamily);
+}
+
+.testimonial-slider-area-3 .owl-nav {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+
+.testimonial-slider-area-3 .owl-nav button {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  color: var(--mainColor) !important;
+  border: 1px solid var(--mainColor) !important;
+}
+
+.testimonial-slider-area-3 .owl-nav .owl-prev {
+  position: absolute;
+  left: 0px;
+}
+
+.testimonial-slider-area-3 .owl-nav .owl-next {
+  position: absolute;
+  right: 0px;
+}
+
+.testimonial {
+  position: relative;
+}
+
+.testimonial .shape33 {
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  -webkit-animation: left-right 5s infinite linear forwards;
+          animation: left-right 5s infinite linear forwards;
+}
+
+.testimonial .shape31 {
+  position: absolute;
+  right: 15%;
+  top: 10%;
+  -webkit-animation: half-spin 15s infinite linear forwards;
+          animation: half-spin 15s infinite linear forwards;
+}
+
+.testimonial .shape41 {
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  -webkit-animation: topBottom 5s infinite linear forwards;
+          animation: topBottom 5s infinite linear forwards;
+}
+
+.testimonial .shape6 {
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  -webkit-animation: half-spin 15s infinite linear forwards;
+          animation: half-spin 15s infinite linear forwards;
+}
+
+/*================================================
+Index 03 Blog Area CSS
+=================================================*/
+.blog-card-3 .blog-card-img {
+  position: relative;
+}
+
+.blog-card-3 .blog-card-img .b-token {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  padding: 5px 20px;
+  color: var(--whiteColor);
+  background-color: var(--mainColor);
+}
+
+/*================================================
+Uni Banner Area CSS
+=================================================*/
+.uni-banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/banner/uni-banner.jpg");
+  position: relative;
+}
+
+.uni-banner::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.uni-banner-text {
+  text-align: center;
+  position: relative;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.uni-banner-text h1 {
+  font-size: 48px;
+  margin-bottom: 12px;
+  color: var(--whiteColor);
+}
+
+.uni-banner-text ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.uni-banner-text ul li {
+  display: inline-block;
+  margin: 0px 10px;
+  color: var(--mainColor);
+  position: relative;
+  font-size: var(--fontSize);
+  font-weight: 500;
+  font-family: var(--fontFamily);
+}
+
+.uni-banner-text ul li a {
+  color: var(--whiteColor);
+}
+
+.uni-banner-text ul li::after {
+  content: '/';
+  font-size: 14px;
+  position: absolute;
+  right: -16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.uni-banner-text ul li:last-child::after {
+  display: none;
+}
+
+/*================================================
+Details Page Sidebar Area CSS
+=================================================*/
+.sidebar-searchbox {
+  border: 1px solid var(--mainColor);
+  border-radius: 5px;
+}
+
+.sidebar-searchbox .form-control {
+  padding: 10px 15px;
+  border: 0px !important;
+  border-radius: 5px !important;
+}
+
+.sidebar-searchbox .btn {
+  margin: 3px;
+  color: var(--whiteColor);
+  border-radius: 5px !important;
+  background-color: var(--mainColor);
+}
+
+.sidebar-section {
+  overflow: hidden;
+}
+
+.sidebar-section h3 {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  position: relative;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sidebar-section h3::before {
+  content: '';
+  width: 80px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: var(--mainColor);
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  -webkit-animation: border-bottom-animation 10s infinite linear forwards;
+          animation: border-bottom-animation 10s infinite linear forwards;
+}
+
+.popular-post {
+  margin-top: 30px;
+}
+
+.popular-post-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.popular-post-card img {
+  margin-right: 10px;
+}
+
+.popular-post-card ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.popular-post-card ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.popular-post-card ul li i {
+  font-size: 15px;
+  color: var(--mainColor);
+  position: relative;
+  top: -1px;
+}
+
+.popular-post-card ul li span {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--fontFamily2);
+}
+
+.popular-post-card h4 {
+  font-size: 17px;
+  font-weight: 700;
+  padding-top: 5px;
+  margin-bottom: 0px;
+}
+
+.category-list {
+  margin-top: 30px;
+}
+
+.category-list ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.category-list ul li {
+  margin-top: 10px;
+}
+
+.category-list ul li i {
+  color: var(--mainColor);
+  margin-right: 5px;
+}
+
+.category-list ul li span {
+  color: var(--paragraphColor);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--fontFamily2);
+}
+
+.category-list ul li span:hover {
+  color: var(--mainColor);
+}
+
+.tag-list {
+  margin-top: 30px;
+}
+
+.tag-list ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.tag-list ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin: 5px 5px 5px 0px;
+  background-color: #f4f8fc;
+  color: var(--paragraphColor);
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily2);
+}
+
+/*================================================
+Blog Details Page Area CSS
+=================================================*/
+.blog-details-text-area img {
+  margin-bottom: 20px;
+}
+
+.blog-details-text-area ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.blog-details-text-area ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.blog-details-text-area ul li i {
+  font-size: 15px;
+  color: var(--mainColor);
+  position: relative;
+  top: -1px;
+}
+
+.blog-details-text-area ul li span {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--fontFamily2);
+}
+
+.blog-details-text-area h3 {
+  font-size: 30px;
+  margin: 12px 0px;
+}
+
+.blog-details-text-area .blog-quote {
+  margin: 10px 0px 25px;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.blog-details-text-area .blog-quote i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: rgba(2, 152, 148, 0.2);
+  z-index: 0;
+}
+
+.blog-details-text-area .blog-quote p {
+  position: relative;
+  font-size: 20px;
+}
+
+.blog-details-footer .blog-details-footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog-details-footer h3 {
+  font-size: 18px;
+}
+
+.blog-details-footer ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.blog-details-footer ul li {
+  display: inline-block;
+}
+
+.blog-details-footer .bd-tags ul li {
+  margin: 0px 5px 0px 0px;
+  font-size: 15px;
+  font-family: var(--fontFamily2);
+}
+
+.blog-details-footer .bd-social-icons ul li {
+  margin: 0px 0px 0px 5px;
+}
+
+.blog-details-footer .bd-social-icons ul li span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.blog-details-form-area {
+  margin-top: 30px;
+}
+
+.blog-details-form-area h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.blog-details-form-area form .form-control {
+  border: 0px;
+  margin: 10px 0px;
+  padding: 12px 15px;
+  background-color: #f4f8fc;
+}
+
+.blog-details-form-area form .form-check {
+  margin: 5px 0px 15px 0px;
+}
+
+.blog-details-form-area form .form-check .form-check-input:checked {
+  background-color: var(--mainColor) !important;
+  border-color: var(--mainColor) !important;
+}
+
+.blog-details-form-area form .form-check label {
+  font-size: 14px;
+  font-family: var(--fontFamily2);
+}
+
+.blog-details-form-area form .default-button {
+  border: 0px;
+  margin-top: 10px;
+}
+
+.pagination ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.pagination ul li {
+  display: inline-block;
+  margin: 0px 3px;
+}
+
+.pagination ul li a {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--mainColor);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--blackColor);
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--fontFamily);
+}
+
+.pagination ul .pag-active a {
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+}
+
+.pgt-30 {
+  margin-top: 30px;
+}
+
+.blog-page-content .blog-card {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+/*================================================
+Case Details Area CSS
+=================================================*/
+.case-details-sidebar h3 {
+  font-size: 20px;
+}
+
+.case-details-sidebar p {
+  margin-bottom: 0px;
+}
+
+.case-details-sidebar .cd-info-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.case-details-sidebar .cd-info-card i {
+  width: 60px;
+  height: 50px;
+  font-size: 30px;
+  margin-right: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--mainColor);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  border: 1px solid var(--mainColor);
+}
+
+.case-details-sidebar .cd-info-card h4 {
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+.case-details-sidebar .cd-info-card p {
+  font-size: 14px;
+}
+
+.case-details-sidebar .cd-info-card:hover i {
+  color: var(--whiteColor);
+  background-color: var(--mainColor);
+}
+
+.case-details-sidebar .cd-social-icons {
+  margin-top: 30px;
+}
+
+.case-details-sidebar .cd-social-icons ul {
+  margin-top: 10px;
+}
+
+.case-details-sidebar .cd-social-icons ul li a {
+  color: var(--whiteColor);
+  background-color: var(--mainColor);
+}
+
+.case-details-text-area img {
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.case-details-text-area img:first-child {
+  margin-top: 0px;
+}
+
+.case-details-text-area h3 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.case-details-text-area h4 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.case-details-text-area ul {
+  margin: 0px 0px 15px 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.case-details-text-area ul li {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.case-details-text-area ul li i {
+  color: var(--mainColor);
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.case-details-text-area ul li span {
+  color: var(--paragraphColor);
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily2);
+}
+
+/*================================================
+Service Details Area CSS
+=================================================*/
+.service-list ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.service-list ul li {
+  margin-top: 10px;
+}
+
+.service-list ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+  background-color: #f4f8fc;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.service-list ul li a span {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: var(--fontFamily);
+}
+
+.service-list ul li a:hover {
+  color: var(--whiteColor);
+  background-color: var(--mainColor);
+}
+
+.service-list ul li .sd-active {
+  color: var(--whiteColor);
+  background-color: var(--mainColor);
+}
+
+.sd-contact-box {
+  padding: 30px 30px 22px 100px;
+  margin: 35px 5px 5px 5px;
+  border: 2px dashed var(--whiteColor);
+  background-color: var(--mainColor);
+  -webkit-box-shadow: 0px 0px 0px 5px var(--mainColor);
+          box-shadow: 0px 0px 0px 5px var(--mainColor);
+  position: relative;
+}
+
+.sd-contact-box .main-icon {
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--whiteColor);
+  border: 1px solid var(--whiteColor);
+  position: absolute;
+  left: 30px;
+}
+
+.sd-contact-box h4 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: var(--whiteColor);
+}
+
+.sd-contact-box p {
+  color: var(--whiteColor);
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.sd-contact-box a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  color: var(--whiteColor);
+}
+
+.sd-contact-box a i {
+  margin-right: 5px;
+}
+
+.service-details-text-area img {
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.service-details-text-area img:first-child {
+  margin-top: 0px;
+}
+
+.service-details-text-area h3 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.service-details-text-area h4 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.service-details-text-area ul {
+  margin: 0px 0px 15px 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.service-details-text-area ul li {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.service-details-text-area ul li i {
+  color: var(--mainColor);
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.service-details-text-area ul li span {
+  color: var(--paragraphColor);
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily2);
+}
+
+/*================================================
+Contact Page Area CSS
+=================================================*/
+.contact-card {
+  text-align: center;
+  padding: 30px 25px;
+  border-radius: 5px;
+  margin-top: 30px;
+  -webkit-box-shadow: 0px 0px 15px -2px #dddddd;
+          box-shadow: 0px 0px 15px -2px #dddddd;
+}
+
+.contact-card i {
+  width: 80px;
+  height: 60px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+  color: var(--whiteColor);
+  background-color: var(--mainColor);
+}
+
+.contact-card h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.contact-card p {
+  margin-bottom: 5px;
+}
+
+.contact-card a {
+  font-weight: 600;
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily2);
+}
+
+.contact-page-form form {
+  margin-top: 10px;
+}
+
+.contact-page-form form .form-control {
+  border: 0px;
+  margin: 10px 0px;
+  padding: 12px 15px;
+  background-color: #f4f8fc;
+}
+
+.contact-page-form form .default-button {
+  border: 0px;
+  margin-top: 20px;
+}
+
+/*================================================
+Terms & Conditions and Privacy Area CSS
+=================================================*/
+.terms h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.terms p {
+  font-size: var(--fontSize);
+}
+
+.terms p strong {
+  color: var(--blackColor);
+}
+
+.terms ul {
+  margin: 0px 0px 20px 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.terms ul li {
+  margin-top: 10px;
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily2);
+}
+
+/*================================================
+Error 404 Area CSS
+=================================================*/
+.error {
+  text-align: center;
+  border-top: 1px solid #eeeeee;
+}
+
+.error img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.error .error-text {
+  width: 540px;
+  margin: 30px auto 0 auto;
+}
+
+.error .error-text h3 {
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.error .error-text p {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  color: var(--paragraphColor);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.error .default-button {
+  padding: 10px 20px;
+}
+
+/*================================================
+Animations Area CSS
+=================================================*/
+@-webkit-keyframes half-spin {
+  0% {
+    -webkit-transform: rotate(0%);
+            transform: rotate(0%);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+}
+@keyframes half-spin {
+  0% {
+    -webkit-transform: rotate(0%);
+            transform: rotate(0%);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+}
+
+@-webkit-keyframes left-right {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(-35px);
+            transform: translateX(-35px);
+  }
+}
+
+@keyframes left-right {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(-35px);
+            transform: translateX(-35px);
+  }
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    -webkit-transform: scale(1) translate(0px);
+            transform: scale(1) translate(0px);
+  }
+  50% {
+    -webkit-transform: scale(1.1) translate(10px);
+            transform: scale(1.1) translate(10px);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    -webkit-transform: scale(1) translate(0px);
+            transform: scale(1) translate(0px);
+  }
+  50% {
+    -webkit-transform: scale(1.1) translate(10px);
+            transform: scale(1.1) translate(10px);
+  }
+}
+
+@-webkit-keyframes topBottom {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@keyframes topBottom {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@-webkit-keyframes player-button {
+  0% {
+    -webkit-box-shadow: 0px 0px 0px 5px white;
+            box-shadow: 0px 0px 0px 5px white;
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0);
+            box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes player-button {
+  0% {
+    -webkit-box-shadow: 0px 0px 0px 5px white;
+            box-shadow: 0px 0px 0px 5px white;
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0);
+            box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0);
+  }
+}
+
+@-webkit-keyframes player-button2 {
+  0% {
+    width: 60%;
+    height: 60%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes player-button2 {
+  0% {
+    width: 60%;
+    height: 60%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes text-color {
+  0% {
+    color: #000000;
+  }
+  50% {
+    color: #029894;
+  }
+}
+
+@keyframes text-color {
+  0% {
+    color: #000000;
+  }
+  50% {
+    color: #029894;
+  }
+}
+
+@-webkit-keyframes border-bottom-animation {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes border-bottom-animation {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
